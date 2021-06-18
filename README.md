@@ -1,4 +1,14 @@
 # Catatan 
+## Tutorial
+### Tutorial Instalasi
+1. Donwload file github ini
+2. Import sql dengan nama ci4uas
+3. Jalankan composer install
+4. Copy folder myth
+5. Buka folder vendor
+6. Pastekan (Replace) folder myth ke dalam folder vendor
+
+
 ## Login & Registrasi
 ### Registrasi
 1. Daftar hanya bisa dengan email uns
