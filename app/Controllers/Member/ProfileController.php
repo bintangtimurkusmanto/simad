@@ -3,15 +3,16 @@
 namespace App\Controllers\Member;
 
 use App\Controllers\BaseController;
+use App\Models\UserModel;
 
 class ProfileController extends BaseController
 {
 	protected $userModel;
 
-	public function __construct()
-	{
-		$this->userModel = new \Myth\Auth\Models\UserModel();
-	}
+	// public function __construct()
+	// {
+	// 	$this->userModel = new \Myth\Auth\Models\UserModel();
+	// }
 
 	public function index()
 	{
@@ -37,13 +38,15 @@ class ProfileController extends BaseController
 			return redirect()->back()->withInput()->with('errors', service('validation')->getErrors());
 		}
 
+		$model = new UserModel();
+
 		$input = [
 			'nama' => $this->request->getVar('nama'),
 			'nim' => $this->request->getVar('nim'),
 			'no_hp' => $this->request->getVar('no_hp'),
 			'alamat' => $this->request->getVar('alamat')
 		];
-		$this->userModel->update(user_id(), $input);
+		$model->update(user_id(), $input);
 
 		session()->setFlashData('update-profile', 'Data Profile berahasil disimpan.');
 

@@ -47,7 +47,7 @@ $routes->get('/doc/(:segment)', 'Member\DocController::detail_guest/$1');
 // MEMBER & ADMIN
 // profile
 $routes->get('/user/profile', 'Member\ProfileController::index');
-$routes->post('/us7er/profile/update', 'Member\ProfileController::update');
+$routes->post('/user/profile/update', 'Member\ProfileController::update');
 
 // dokumen
 $routes->get('/user/doc/(:segment)', 'Member\DocController::detail_member/$1');
