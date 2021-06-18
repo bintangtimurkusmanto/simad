@@ -2,6 +2,7 @@
 ## Tutorial
 ### Tutorial Instalasi
 1. Donwload file github ini
+2. Setting file .env cukup rename file .env_example menjadi .env
 2. Import sql dengan nama ci4uas
 3. Jalankan composer install
 4. Copy folder myth
