@@ -5,7 +5,7 @@
 2. Setting file .env cukup rename file .env_example menjadi .env
 3. Import sql dengan nama ci4uas
 4. Jalankan composer install
-5. Copy folder myth
+5. Copy folder myth (Folder yang diluar)
 6. Buka folder vendor
 7. Pastekan (Replace) folder myth ke dalam folder vendor
 
